@@ -25,3 +25,6 @@ npm start
 ```
 
 Ensure you have Node.js and npm installed on your system before running these commands.
+
+PS
+Double click on the restart button for it to work
