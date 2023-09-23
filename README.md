@@ -1,0 +1,27 @@
+To get started, follow these steps:
+
+1. Clone this repository to your local machine.
+
+```sh
+git clone <repository_url>
+```
+
+2. Navigate to the project directory.
+
+```sh
+cd tic-tac-toe
+```
+
+3. Install the required dependencies.
+
+```sh
+npm install
+```
+
+4. Start the application.
+
+```sh
+npm start
+```
+
+Ensure you have Node.js and npm installed on your system before running these commands.
