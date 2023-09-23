@@ -3,7 +3,7 @@ To get started, follow these steps:
 1. Clone this repository to your local machine.
 
 ```sh
-git clone <repository_url>
+git clone https://github.com/Akshat-vg/tic-tac-toe.git
 ```
 
 2. Navigate to the project directory.
