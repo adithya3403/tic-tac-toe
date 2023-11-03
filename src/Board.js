@@ -3,7 +3,7 @@ import { useState, useLayoutEffect } from 'react';
 import './App.css';
 
 import Status from './Status';
-
+import Head from './Head';
 
 export default function Board() {
     let boardIn = Array(3).fill(0).map(() => Array(3).fill('square-empty'));
@@ -195,6 +195,7 @@ export default function Board() {
 
     return (
         <>
+            <Head/>
             <header>
                 <select id="player-select" onChange={handlePlayerSelectChange}>
                     <option value="1">AI</option>
@@ -214,11 +215,17 @@ export default function Board() {
                 <button id="2-0" className="box square" onClick={() => makePlayerMove(2, 0)}></button>
                 <button id="2-1" className="box square" onClick={() => makePlayerMove(2, 1)}></button>
                 <button id="2-2" className="box square" onClick={() => makePlayerMove(2, 2)}></button>
-
             </div>
-            <button id='restart' onClick={() => {
+            <div style={
+                {
+                    "display": "flex",
+                    "justifyContent": "center"
+                }
+            }>
+            <button id="restart" onClick={() => {
                 restart();
             }}>Restart</button>
+            </div>
         </>
     );
 }

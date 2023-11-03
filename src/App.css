@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
 
 :root {
-  --background-color: white;
-  --x-color-primary: #D45757;
-  --x-color-shadow: #D4575740;
-  --o-color-primary: #373434;
-  --o-color-shadow: #37343420;
+  --background-color: #FDF6E3;
+  --x-color-primary: #CB4B16;
+  --x-color-shadow: #CB4B1635;
+  --o-color-primary: #586E75;
+  --o-color-shadow: #586E7540;
 }
 
 [color-scheme="default-dark"] {
@@ -79,7 +79,7 @@ screen and (max-height: 800px) {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -148,6 +148,8 @@ header select {
 }
 
 #restart {
+  /* display: flex;
+  justify-content: center; */
   background-color: var(--o-color-primary);
   padding: 5px 15px;
   border-radius: 100px;
@@ -155,7 +157,6 @@ header select {
   color: var(--background-color);
   font-family: 'Poppins', sans-serif;
   margin-top: 50px;
-
 }
 
 
@@ -163,6 +164,7 @@ header select {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
+  justify-content: center;
 }
 
 

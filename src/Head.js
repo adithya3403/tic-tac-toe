@@ -3,15 +3,15 @@ import './App.css';
 
 export default function Head() {
     const [currentTheme, setCurrentTheme] = useState('default-light');
-    
+
     const handleThemeChange = (theme) => {
         document.documentElement.setAttribute('color-scheme', theme);
         setCurrentTheme(theme);
     };
 
     return (
-        <header>
-            <h3>Tic Tac Toe</h3>
+        <header style={{"marginTop": "1%"}}>
+            <h4>Choose your theme</h4>
             <div className="themes-container">
                 <button
                     className="theme-button"
@@ -45,5 +45,5 @@ export default function Head() {
                 ></button>
             </div>
         </header>
-    )
+    );
 }
